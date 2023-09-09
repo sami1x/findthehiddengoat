@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Find The Hidden Goat</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="about">
+        <p>
+          "Find the Hidden Goat" is an audio-based game that challenges players
+          to locate a concealed goat using only their sense of hearing. Listen
+          closely for subtle goat sounds and track its position to succeed. Can
+          you uncover the hidden goat and conquer the challenge?
+        </p>
+        <button class="play btn">Play</button>
+      </div>
+      <div class="ending">
+        <p>Congratulations !!! <br>You found the Goat !!!!</p>
+        <button class="replay btn">Replay</button>
+      </div>
+      <audio id="sound" loop>
+        <source id="source" src="sound.wav" type="audio/mpeg" />
+      </audio>
+      <audio id="aoa">
+        <source id="source" src="aoa.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="wrapper">
+        <img class="goat" src="goat1.svg" alt="goat" />
+        <div class="overlay"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
